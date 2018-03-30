@@ -1254,3 +1254,620 @@ Message properties:
 *   Wrapper Manager                                                  *
 **********************************************************************
 2018-03-29 20:06:08,672 [[apdev-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: max, Type: mule, Color: mauve
+2018-03-29 23:23:49,145 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:23:49,310 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-29 23:23:49,446 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-29 23:23:49,776 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-29 23:23:49,777 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-29 23:23:49,856 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7a231dfd: startup date [Thu Mar 29 23:23:49 CDT 2018]; root of context hierarchy
+2018-03-29 23:23:51,203 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-29 23:23:52,208 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-03-29 23:23:52,532 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-03-29 23:23:52,566 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-03-29 23:23:52,673 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-03-29 23:23:52,677 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-03-29 23:23:52,677 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@9785903
+2018-03-29 23:23:52,707 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-03-29 23:23:53,106 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:23:53,106 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:23:53,112 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:23:53,116 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-03-29 23:23:53,116 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-03-29 23:23:53,182 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-03-29 23:23:53,186 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:23:53,187 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-03-29 23:23:53,188 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-03-29 23:23:53,189 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-03-29 23:23:53,240 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-03-29 23:23:53,264 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-03-29 23:24:41,009 [[apdev-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: max, Type: mule, Color: mauve
+2018-03-29 23:26:53,657 [[apdev-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: max, Type: mule, Color: mauve
+2018-03-29 23:28:18,449 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:28:18,451 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apdev-examplesFlow
+2018-03-29 23:28:18,452 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apdev-examplesFlow.stage1
+2018-03-29 23:28:18,610 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-03-29 23:28:18,617 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-03-29 23:28:18,618 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-03-29 23:28:18,618 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-03-29 23:28:18,622 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'apdev-examples'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:28:18,622 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-03-29 23:28:18,623 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apdev-examplesFlow
+2018-03-29 23:28:18,624 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apdev-examplesFlow.stage1
+2018-03-29 23:28:18,627 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-03-29 23:28:18,738 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7a231dfd: startup date [Thu Mar 29 23:23:49 CDT 2018]; root of context hierarchy
+2018-03-29 23:28:18,745 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "apdev-examples" shut down normally on: 3/29/18 11:28  *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 4 mins, 25.630 sec                        *
+**********************************************************************
+2018-03-29 23:28:19,032 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:28:19,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-29 23:28:19,044 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-29 23:28:19,054 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-29 23:28:19,054 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-29 23:28:19,056 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1d803176: startup date [Thu Mar 29 23:28:19 CDT 2018]; root of context hierarchy
+2018-03-29 23:28:19,324 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-03-29 23:28:19,328 [Mule.app.deployer.monitor.1.thread.1] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+org.xml.sax.SAXParseException: cvc-complex-type.2.4.b: The content of element 'flow' is not complete. One of '{"http://www.mulesoft.org/schema/mule/core":annotations, "http://www.mulesoft.org/schema/mule/core":description, "http://www.mulesoft.org/schema/mule/core":abstract-message-source, "http://www.mulesoft.org/schema/mule/core":abstract-inbound-endpoint, "http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-outbound-endpoint, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor, "http://www.mulesoft.org/schema/mule/core":response}' is expected.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:453) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3231) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidComplexType(XMLSchemaValidator.java:3207) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3154) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3056) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2135) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:770) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[?:1.8.0_161]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.MuleDocumentLoader.loadDocument(MuleDocumentLoader.java:91) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.MuleArtifactContext.loadBeanDefinitions(MuleArtifactContext.java:192) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:541) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.SpringRegistry.doInitialise(SpringRegistry.java:108) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:104) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:177) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:100) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AutoConfigurationBuilder.autoConfigure(AutoConfigurationBuilder.java:102) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AutoConfigurationBuilder.doConfigure(AutoConfigurationBuilder.java:54) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.context.DefaultMuleContextFactory$1.configure(DefaultMuleContextFactory.java:89) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:501) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.redeploy(DefaultArchiveDeployer.java:437) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedArtifacts(DeploymentDirectoryWatcher.java:567) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.redeployModifiedApplications(DeploymentDirectoryWatcher.java:544) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:356) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_161]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[?:1.8.0_161]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[?:1.8.0_161]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[?:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_161]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_161]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+2018-03-29 23:28:19,331 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - App 'apdev-examples' never started, nothing to dispose of
+2018-03-29 23:32:49,725 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:32:49,731 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-29 23:32:49,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-29 23:32:49,746 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-29 23:32:49,746 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-29 23:32:49,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5df2bf43: startup date [Thu Mar 29 23:32:49 CDT 2018]; root of context hierarchy
+2018-03-29 23:32:49,950 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-29 23:32:50,043 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-03-29 23:32:50,044 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-03-29 23:32:50,053 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-03-29 23:32:50,054 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-03-29 23:32:50,054 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4d296af
+2018-03-29 23:32:50,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-03-29 23:32:50,059 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-03-29 23:32:50,059 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@41aefa38
+2018-03-29 23:32:50,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-03-29 23:32:50,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:32:50,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:32:50,077 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:32:50,080 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-03-29 23:32:50,080 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-03-29 23:32:50,085 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-03-29 23:32:50,088 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:32:50,088 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-03-29 23:32:50,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-03-29 23:32:50,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-03-29 23:32:50,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-03-29 23:32:50,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-03-29 23:32:50,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-03-29 23:32:50,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-03-29 23:33:50,149 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:33:50,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: apdev-examplesFlow
+2018-03-29 23:33:50,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: apdev-examplesFlow.stage1
+2018-03-29 23:33:50,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flow2
+2018-03-29 23:33:50,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flow2.stage1
+2018-03-29 23:33:50,419 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2018-03-29 23:33:50,422 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2018-03-29 23:33:50,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2018-03-29 23:33:50,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2018-03-29 23:33:50,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'apdev-examples'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:33:50,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-03-29 23:33:50,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: apdev-examplesFlow
+2018-03-29 23:33:50,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: apdev-examplesFlow.stage1
+2018-03-29 23:33:50,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flow2
+2018-03-29 23:33:50,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flow2.stage1
+2018-03-29 23:33:50,427 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-03-29 23:33:50,437 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5df2bf43: startup date [Thu Mar 29 23:32:49 CDT 2018]; root of context hierarchy
+2018-03-29 23:33:50,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "apdev-examples" shut down normally on: 3/29/18 11:33  *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 0.362 sec                         *
+**********************************************************************
+2018-03-29 23:33:50,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:33:50,497 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-29 23:33:50,500 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-29 23:33:50,508 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-29 23:33:50,508 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-29 23:33:50,510 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@b939e0e: startup date [Thu Mar 29 23:33:50 CDT 2018]; root of context hierarchy
+2018-03-29 23:33:50,674 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-29 23:33:50,759 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-03-29 23:33:50,760 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-03-29 23:33:50,766 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-03-29 23:33:50,767 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-03-29 23:33:50,767 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3ba780a7
+2018-03-29 23:33:50,771 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-03-29 23:33:50,772 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-03-29 23:33:50,772 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3e1e8305
+2018-03-29 23:33:50,775 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-03-29 23:33:50,789 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:33:50,789 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:33:50,790 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:33:50,792 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-03-29 23:33:50,792 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-03-29 23:33:50,798 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-03-29 23:33:50,801 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:33:50,802 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-03-29 23:33:50,803 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-03-29 23:33:50,803 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-03-29 23:33:50,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-03-29 23:33:50,806 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-03-29 23:33:50,816 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-03-29 23:33:50,820 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-03-29 23:34:36,697 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:34:36,853 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-29 23:34:36,984 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-29 23:34:37,279 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-29 23:34:37,279 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-29 23:34:37,341 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@30814f43: startup date [Thu Mar 29 23:34:37 CDT 2018]; root of context hierarchy
+2018-03-29 23:34:38,526 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-29 23:34:39,517 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-03-29 23:34:39,845 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-03-29 23:34:39,860 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-03-29 23:34:39,953 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-03-29 23:34:39,957 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-03-29 23:34:39,958 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4e958f08
+2018-03-29 23:34:39,990 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-03-29 23:34:40,124 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-03-29 23:34:40,124 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@13516600
+2018-03-29 23:34:40,127 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-03-29 23:34:40,412 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:34:40,413 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:34:40,419 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:34:40,423 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-03-29 23:34:40,423 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-03-29 23:34:40,487 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-03-29 23:34:40,491 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:34:40,492 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-03-29 23:34:40,493 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-03-29 23:34:40,493 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-03-29 23:34:40,497 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-03-29 23:34:40,497 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-03-29 23:34:40,543 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-03-29 23:34:40,570 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-03-29 23:36:19,258 [[apdev-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=ac5863b0-33d3-11e8-9c3c-80e65010b6f8
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    qptype=mule
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    cache-control=no-cache
+    connection=keep-alive
+    host=localhost:8081
+    http.listener.path=/hello
+    http.method=GET
+    http.query.params=ParameterMap{[name=[max], type=[mule]]}
+    http.query.string=name=max&type=mule
+    http.relative.path=/hello
+    http.remote.address=/127.0.0.1:58364
+    http.request.path=/hello
+    http.request.uri=/hello?name=max&type=mule
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    postman-token=94241260-f20f-4a2b-a3ed-7d6d7277e298
+    user-agent=PostmanRuntime/7.1.1
+  OUTBOUND scoped properties:
+    qpname=max
+  SESSION scoped properties:
+    color=mauve
+}
+2018-03-29 23:36:23,266 [[apdev-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: max, Type: mule, Color: mauve
+2018-03-29 23:38:21,391 [[apdev-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=ef2d9ca0-33d3-11e8-9c3c-80e65010b6f8
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+    qptype=mule
+  INBOUND scoped properties:
+    accept=*/*
+    accept-encoding=gzip, deflate
+    cache-control=no-cache
+    connection=keep-alive
+    host=localhost:8081
+    http.listener.path=/hello
+    http.method=GET
+    http.query.params=ParameterMap{[name=[max], type=[mule]]}
+    http.query.string=name=max&type=mule
+    http.relative.path=/hello
+    http.remote.address=/127.0.0.1:58364
+    http.request.path=/hello
+    http.request.uri=/hello?name=max&type=mule
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    postman-token=67c99c12-d37f-4c01-8d0d-32cba04cd657
+    user-agent=PostmanRuntime/7.1.1
+  OUTBOUND scoped properties:
+    qpname=max
+  SESSION scoped properties:
+    color=mauve
+}
+2018-03-29 23:38:29,551 [[apdev-examples].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Name: max, Type: mule, Color: mauve
+2018-03-29 23:52:04,113 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:52:04,280 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-29 23:52:04,415 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-29 23:52:04,722 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-29 23:52:04,722 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-29 23:52:04,792 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@30814f43: startup date [Thu Mar 29 23:52:04 CDT 2018]; root of context hierarchy
+2018-03-29 23:52:05,995 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-29 23:52:07,042 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-03-29 23:52:07,385 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-03-29 23:52:07,401 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-03-29 23:52:07,510 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-03-29 23:52:07,514 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-03-29 23:52:07,514 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6dae70f9
+2018-03-29 23:52:07,670 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-03-29 23:52:07,690 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-03-29 23:52:07,690 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5b742bc8
+2018-03-29 23:52:07,694 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-03-29 23:52:07,992 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:52:07,992 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-29 23:52:07,998 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:52:08,002 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-03-29 23:52:08,002 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-03-29 23:52:08,063 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-03-29 23:52:08,067 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-29 23:52:08,068 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-03-29 23:52:08,069 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-03-29 23:52:08,070 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-03-29 23:52:08,073 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-03-29 23:52:08,074 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-03-29 23:52:08,419 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-03-29 23:52:08,442 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-03-29 23:52:57,756 [[apdev-examples].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Error sending HTTP request to http://localhost:8081/flow2.
+Payload               : HELLO WORLD!
+Payload Type          : java.lang.String
+Element               : /apdev-examplesFlow/processors/2 @ apdev-examples:apdev-examples.xml:16 (HTTP)
+Element XML           : <http:request config-ref="HTTP_Request_Configuration" path="/flow2" method="GET" doc:name="HTTP"></http:request>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.util.concurrent.TimeoutException: Timeout exceeded
+	at com.ning.http.client.providers.grizzly.GrizzlyAsyncHttpProvider.timeout(GrizzlyAsyncHttpProvider.java:433)
+	at com.ning.http.client.providers.grizzly.GrizzlyAsyncHttpProvider$3.onTimeout(GrizzlyAsyncHttpProvider.java:281)
+	at org.glassfish.grizzly.utils.IdleTimeoutFilter$DefaultWorker.doWork(IdleTimeoutFilter.java:402)
+	at org.glassfish.grizzly.utils.IdleTimeoutFilter$DefaultWorker.doWork(IdleTimeoutFilter.java:381)
+	at org.glassfish.grizzly.utils.DelayedExecutor$DelayedRunnable.run(DelayedExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2018-03-29 23:53:44,067 [[apdev-examples].HTTP_Listener_Configuration.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=2e914390-33d6-11e8-ac5e-80e65010b6f8
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=*/*
+    connection=keep-alive
+    host=localhost:8081
+    http.listener.path=/flow2
+    http.method=GET
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=/flow2
+    http.remote.address=/127.0.0.1:58387
+    http.request.path=/flow2
+    http.request.uri=/flow2
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    qpname=max
+    user-agent=AHC/1.0
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-03-30 15:19:37,663 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-30 15:19:37,826 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-03-30 15:19:37,960 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-03-30 15:19:38,264 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-03-30 15:19:38,265 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-03-30 15:19:38,331 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5c82cd4f: startup date [Fri Mar 30 15:19:38 CDT 2018]; root of context hierarchy
+2018-03-30 15:19:39,555 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-03-30 15:19:40,557 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-03-30 15:19:40,894 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-03-30 15:19:40,912 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-03-30 15:19:41,129 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-03-30 15:19:41,132 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-03-30 15:19:41,132 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@10618775
+2018-03-30 15:19:41,162 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-03-30 15:19:41,181 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-03-30 15:19:41,181 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5db0003d
+2018-03-30 15:19:41,188 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-03-30 15:19:41,465 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-30 15:19:41,465 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}]"
+2018-03-30 15:19:41,470 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-30 15:19:41,474 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-03-30 15:19:41,474 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-03-30 15:19:41,537 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-03-30 15:19:41,541 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-03-30 15:19:41,542 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-03-30 15:19:41,543 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-03-30 15:19:41,544 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-03-30 15:19:41,547 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-03-30 15:19:41,547 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-03-30 15:19:41,884 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-03-30 15:19:41,905 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-03-30 15:21:53,658 [[apdev-examples].HTTP_Listener_Configuration.worker.02] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=d81ba690-3457-11e8-a1c4-80e65010b6f8
+  payload=java.lang.String
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=*/*
+    connection=keep-alive
+    host=localhost:8081
+    http.listener.path=/flow2
+    http.method=GET
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=/flow2
+    http.remote.address=/127.0.0.1:59394
+    http.request.path=/flow2
+    http.request.uri=/flow2
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    qpname=max
+    user-agent=AHC/1.0
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2018-03-30 15:22:28,659 [[apdev-examples].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Error sending HTTP request to http://localhost:8081/flow2.
+Payload               : HELLO WORLD!
+Payload Type          : java.lang.String
+Element               : /apdev-examplesFlow/processors/2 @ apdev-examples:apdev-examples.xml:16 (HTTP)
+Element XML           : <http:request config-ref="HTTP_Request_Configuration" path="/flow2" method="GET" doc:name="HTTP"></http:request>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.util.concurrent.TimeoutException: Timeout exceeded
+	at com.ning.http.client.providers.grizzly.GrizzlyAsyncHttpProvider.timeout(GrizzlyAsyncHttpProvider.java:433)
+	at com.ning.http.client.providers.grizzly.GrizzlyAsyncHttpProvider$3.onTimeout(GrizzlyAsyncHttpProvider.java:281)
+	at org.glassfish.grizzly.utils.IdleTimeoutFilter$DefaultWorker.doWork(IdleTimeoutFilter.java:402)
+	at org.glassfish.grizzly.utils.IdleTimeoutFilter$DefaultWorker.doWork(IdleTimeoutFilter.java:381)
+	at org.glassfish.grizzly.utils.DelayedExecutor$DelayedRunnable.run(DelayedExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
