@@ -10,7 +10,12 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <flow name="getUnitedFlightsFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/united" allowedMethods="GET" doc:name="HTTP"/>
-        <http:request config-ref="United_REST_Request_Configuration" path="/essentials/united/flights" method="GET" doc:name="United REST Request" metadata:id="f70d5744-d9d4-4806-bec4-fdce4316ad5b"/>
+        <set-variable variableName="code" value="#[(message.inboundProperties.'http.query.params'.code == empty) ? 'SFO' : message.inboundProperties.'http.query.params'.code]" doc:name="Set airport code variable"/>
+        <http:request config-ref="United_REST_Request_Configuration" path="/essentials/united/flights/{destination}" method="GET" doc:name="United REST Request" metadata:id="f70d5744-d9d4-4806-bec4-fdce4316ad5b">
+            <http:request-builder>
+                <http:uri-param paramName="destination" value="#[flowVars.code]"/>
+            </http:request-builder>
+        </http:request>
         <dw:transform-message doc:name="Transform Message" metadata:id="ca580fbf-23c8-4544-830a-ba1ef0539ce3">
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
