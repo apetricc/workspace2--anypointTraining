@@ -10,4 +10,7 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <context:property-placeholder location="flights-${env}.properties"/>
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
     <http:request-config name="United_REST_Request_Configuration" host="${united.host}" port="80" doc:name="HTTP Request Configuration"/>
+    <http:request-config name="American_HTTP_Request_Configuration" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/3ccb4819-5283-4906-a7f8-37942eb022f9" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="https://anypoint.mulesoft.com/exchange/api/v1/organizations/4536eede-e6f1-4807-bd8c-7e48765b84e8/assets/4536eede-e6f1-4807-bd8c-7e48765b84e8/american-flights-api/1.0.2/api/root"/>
+    </http:request-config>
 </mule>
