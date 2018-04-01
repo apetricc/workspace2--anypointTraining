@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:context="http://www.springframework.org/schema/context" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-	xmlns:spring="http://www.springframework.org/schema/beans" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
-http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
-http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd">
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
     <context:property-placeholder location="flights-${env}.properties"/>
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
     <http:request-config name="United_REST_Request_Configuration" host="${united.host}" port="80" doc:name="HTTP Request Configuration"/>
-    <http:request-config name="American_HTTP_Request_Configuration" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/3ccb4819-5283-4906-a7f8-37942eb022f9" doc:name="HTTP Request Configuration">
-        <http:raml-api-configuration location="https://anypoint.mulesoft.com/exchange/api/v1/organizations/4536eede-e6f1-4807-bd8c-7e48765b84e8/assets/4536eede-e6f1-4807-bd8c-7e48765b84e8/american-flights-api/1.0.2/api/root"/>
+    <http:request-config name="American_HTTP_Request_Configuration" host="training-american-ws.cloudhub.io" port="80" basePath="/api/" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="https://anypoint.mulesoft.com/exchange/api/v1/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/assets/68ef9520-24e9-4cf2-b2f5-620025690913/training-american-flights-api/1.0.1/api/root"/>
     </http:request-config>
 </mule>
