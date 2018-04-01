@@ -44,5 +44,21 @@ payload.flights map ((flight , indexOfFlight) -> {
                 <http:query-param paramName="destination" value="#[flowVars.code]"/>
             </http:request-builder>
         </http:request>
+        <dw:transform-message doc:name="Transform Message" metadata:id="fd7dc55d-65bb-4f5a-8d30-f67755cfa9df">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	airline: "American",
+	flightCode: payload01.code,
+	fromAirportCode: payload01.origin,
+	toAirportCode: payload01.destination,
+	departureDate: payload01.departureDate,
+	emptySeats: payload01.emptySeats,
+	totalSeats: payload01.plane.totalSeats,
+	price: payload01.price,
+	planeType: payload01.plane.type
+})]]></dw:set-payload>
+        </dw:transform-message>
     </flow>
 </mule>
