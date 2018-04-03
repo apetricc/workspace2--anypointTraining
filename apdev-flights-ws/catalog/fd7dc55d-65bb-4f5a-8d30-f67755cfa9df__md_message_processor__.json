@@ -2,8 +2,15 @@
     "inputMessageMetadata": {},
     "outputMessageMetadata": {
         "messagePayload": {
-            "connectorName": "#_custom_mule_metadata_type_#",
-            "typeId": "flights_json"
+            "model": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "Flight_pojo"
+            },
+            "isArray": false,
+            "dataType": "LIST",
+            "metaDataModelPropertiesManager": {
+                "properties": []
+            }
         }
     },
     "id": "fd7dc55d-65bb-4f5a-8d30-f67755cfa9df",

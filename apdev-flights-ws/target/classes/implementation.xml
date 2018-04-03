@@ -47,17 +47,19 @@ payload orderBy $.price]]></dw:set-payload>
         </http:request>
         <dw:transform-message doc:name="Transform Message" metadata:id="ca580fbf-23c8-4544-830a-ba1ef0539ce3">
             <dw:set-payload><![CDATA[%dw 1.0
-%output application/json
+%output application/java
 ---
 payload.flights map ((flight , indexOfFlight) -> {
-	airline: flight.airlineName,
-	flightCode: flight.code,
-	fromAirportCode: flight.origin,
-	toAirportCode: flight.destination,
+	airlineName: flight.airlineName,
+	availableSeats: flight.emptySeats,
 	departureDate: flight.departureDate,
-	emptySeats: flight.emptySeats,
-	price: flight.price,
-	planeType: flight.planeType
+	destination: flight.destination,
+	flightCode: flight.code,
+	origination: flight.origin,
+	planeType: flight.planeType,
+	price: flight.price
+} as :object {
+	class : "com.mulesoft.training.Flight"
 })]]></dw:set-payload>
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
@@ -77,18 +79,20 @@ payload.flights map ((flight , indexOfFlight) -> {
         <ws:consumer config-ref="Web_Service_Consumer" operation="findFlight" doc:name="Delta SOAP Request"/>
         <dw:transform-message doc:name="Transform Message" metadata:id="bd6848a9-a05f-44a8-9a8a-b04286864691">
             <dw:set-payload><![CDATA[%dw 1.0
-%output application/json
+%output application/java
 %namespace ns0 http://soap.training.mulesoft.com/
 ---
 payload.ns0#findFlightResponse.*return map ((return , indexOfReturn) -> {
-	airline: return.airlineName,
-	flightCode: return.code,
-	fromAirportCode: return.origin,
-	toAirportCode: return.destination,
+	airlineName: return.airlineName,
+	availableSeats: return.emptySeats,
 	departureDate: return.departureDate,
-	emptySeats: return.emptySeats,
-	price: return.price,
-	planeType: return.planeType
+	destination: return.destination,
+	flightCode: return.code,
+	origination: return.origin,
+	planeType: return.planeType,
+	price: return.price
+} as :object {
+	class : "com.mulesoft.training.Flight"
 })]]></dw:set-payload>
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
@@ -101,18 +105,19 @@ payload.ns0#findFlightResponse.*return map ((return , indexOfReturn) -> {
         </http:request>
         <dw:transform-message doc:name="Transform Message" metadata:id="fd7dc55d-65bb-4f5a-8d30-f67755cfa9df">
             <dw:set-payload><![CDATA[%dw 1.0
-%output application/json
+%output application/java
 ---
 payload map ((payload01 , indexOfPayload01) -> {
-	airline: "American",
-	flightCode: payload01.code,
-	fromAirportCode: payload01.origin,
-	toAirportCode: payload01.destination,
+	airlineName: "American",
+	availableSeats: payload01.emptySeats,
 	departureDate: payload01.departureDate,
-	emptySeats: payload01.emptySeats,
-	totalSeats: payload01.plane.totalSeats,
-	price: payload01.price,
-	planeType: payload01.plane.type
+	destination: payload01.destination,
+	flightCode: payload01.code,
+	origination: payload01.origin,
+	planeType: payload01.plane.type,
+	price: payload01.price
+} as :object {
+	class : "com.mulesoft.training.Flight"
 })]]></dw:set-payload>
         </dw:transform-message>
     </flow>
