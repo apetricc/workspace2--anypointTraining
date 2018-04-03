@@ -123,9 +123,18 @@ payload map ((payload01 , indexOfPayload01) -> {
     </flow>
     <flow name="getAllAirlineFlightsFlow">
         <scatter-gather doc:name="Scatter-Gather">
-            <flow-ref name="getDeltaFlightsFlow" doc:name="getDeltaFlightsFlow"/>
-            <flow-ref name="getUnitedFlightsFlow" doc:name="getUnitedFlightsFlow"/>
-            <flow-ref name="getAmericanFlightsFlow" doc:name="getAmericanFlightsFlow"/>
+            <processor-chain>
+                <flow-ref name="getDeltaFlightsFlow" doc:name="getDeltaFlightsFlow"/>
+                <filter ref="Filter_Not_ArrayList" doc:name="Filter Reference"/>
+            </processor-chain>
+            <processor-chain>
+                <flow-ref name="getUnitedFlightsFlow" doc:name="getUnitedFlightsFlow"/>
+                <filter ref="Filter_Not_ArrayList" doc:name="Filter Reference"/>
+            </processor-chain>
+            <processor-chain>
+                <flow-ref name="getAmericanFlightsFlow" doc:name="getAmericanFlightsFlow"/>
+                <filter ref="Filter_Not_ArrayList" doc:name="Filter Reference"/>
+            </processor-chain>
         </scatter-gather>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
