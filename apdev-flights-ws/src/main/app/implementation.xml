@@ -9,6 +9,12 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
 http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd">
+    <flow name="getFlightsFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/flights" allowedMethods="GET" doc:name="HTTP"/>
+        <flow-ref name="getDeltaFlightsFlow" doc:name="getDeltaFlightsFlowReference"/>
+        <logger level="INFO" doc:name="Logger"/>
+        
+    </flow>
     <sub-flow name="setCodeSubflow">
         <set-variable variableName="code" value="#[(message.inboundProperties.'http.query.params'.code == empty) ? 'SFO' : message.inboundProperties.'http.query.params'.code]" doc:name="Set airport code variable"/>
     </sub-flow>
@@ -37,6 +43,39 @@ payload.flights map ((flight , indexOfFlight) -> {
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
     </flow>
+    <flow name="getDeltaFlightsFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/delta" allowedMethods="GET" doc:name="HTTP"/>
+        <flow-ref name="setCodeSubflow" doc:name="setCodeSubflow"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://soap.training.mulesoft.com/
+---
+{
+	ns0#findFlight: {
+		destination: flowVars.code as :string
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="findFlight" doc:name="Delta SOAP Request"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="bd6848a9-a05f-44a8-9a8a-b04286864691">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+%namespace ns0 http://soap.training.mulesoft.com/
+---
+payload.ns0#findFlightResponse.*return map ((return , indexOfReturn) -> {
+	airline: return.airlineName,
+	flightCode: return.code,
+	fromAirportCode: return.origin,
+	toAirportCode: return.destination,
+	departureDate: return.departureDate,
+	emptySeats: return.emptySeats,
+	price: return.price,
+	planeType: return.planeType
+})]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
     <flow name="getAmericanFlightsFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/american" allowedMethods="GET" doc:name="HTTP"/>
         <flow-ref name="setCodeSubflow" doc:name="setCodeSubflow"/>
@@ -61,32 +100,5 @@ payload map ((payload01 , indexOfPayload01) -> {
 	planeType: payload01.plane.type
 })]]></dw:set-payload>
         </dw:transform-message>
-    </flow>
-    <flow name="getDeltaFlightsFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/delta" allowedMethods="GET" doc:name="HTTP"/>
-        <flow-ref name="setCodeSubflow" doc:name="setCodeSubflow"/>
-        <ws:consumer config-ref="Web_Service_Consumer" operation="findFlight" doc:name="Delta SOAP Request"/>
-        <dw:transform-message doc:name="Transform Message" metadata:id="bd6848a9-a05f-44a8-9a8a-b04286864691">
-            <dw:set-payload><![CDATA[%dw 1.0
-%output application/json
-%namespace ns0 http://soap.training.mulesoft.com/
----
-payload.ns0#findFlightResponse.*return map ((return , indexOfReturn) -> {
-	airline: return.airlineName,
-	flightCode: return.code,
-	fromAirportCode: return.origin,
-	toAirportCode: return.destination,
-	departureDate: return.departureDate,
-	emptySeats: return.emptySeats,
-	price: return.price,
-	planeType: return.planeType
-})]]></dw:set-payload>
-        </dw:transform-message>
-        <logger level="INFO" doc:name="Logger"/>
-        <catch-exception-strategy doc:name="Catch Exception Strategy">
-            <set-payload value="NO FLIGHTS to #[flowVars.code + '\n' + exception]" doc:name="Set Payload"/>
-            <set-property propertyName="http.status" value="400" doc:name="Property"/>
-            <logger level="INFO" doc:name="Logger"/>
-        </catch-exception-strategy>
     </flow>
 </mule>
