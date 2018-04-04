@@ -146,4 +146,12 @@ flatten payload]]></dw:set-payload>
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
     </flow>
+    <flow name="postFlightFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/flights" allowedMethods="POST" doc:name="HTTP" metadata:id="78000dbd-b8d7-436b-ab92-8c86cbd2cdb1"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:input-payload doc:sample="flight-example.json"/>
+            <dw:set-payload resource="classpath:json_flight_playground.dwl"/>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
 </mule>
