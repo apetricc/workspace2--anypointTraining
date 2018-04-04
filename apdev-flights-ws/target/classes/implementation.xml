@@ -151,6 +151,16 @@ flatten payload]]></dw:set-payload>
         <dw:transform-message doc:name="Transform Message">
             <dw:input-payload doc:sample="flight-example.json"/>
             <dw:set-payload resource="classpath:json_flight_playground.dwl"/>
+            <dw:set-variable variableName="xml"><![CDATA[%dw 1.0
+%output application/xml
+---
+data: {
+	hub: "MUA",
+	flight @(airline: payload.airline): {
+		code: payload.toAirportCode
+	}
+	
+}]]></dw:set-variable>
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
     </flow>
