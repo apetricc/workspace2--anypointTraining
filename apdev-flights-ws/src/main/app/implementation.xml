@@ -169,9 +169,9 @@ data: {
         <dw:transform-message doc:name="Transform Message">
             <dw:input-payload doc:sample="flights-example.json"/>
             <dw:set-payload><![CDATA[%dw 1.0
-%output application/java
+%output application/xml
 ---
-payload map {
+flights: payload map {
 	flight: $$,
 	'flight$$': $
 }]]></dw:set-payload>

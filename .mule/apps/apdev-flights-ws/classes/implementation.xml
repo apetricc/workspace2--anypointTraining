@@ -164,4 +164,18 @@ data: {
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
     </flow>
+    <flow name="postMultipleFlightsFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/multipleflights" allowedMethods="POST" doc:name="HTTP" metadata:id="703ac84d-e0ce-4066-9edd-c57504e9c4c5"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:input-payload doc:sample="flights-example.json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload map {
+	flight: $$,
+	'flight$$': $
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
 </mule>
