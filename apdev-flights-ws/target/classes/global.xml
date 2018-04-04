@@ -22,6 +22,15 @@ http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/cu
 
 	<choice-exception-strategy name="Choice_Exception_Strategy">
 		<catch-exception-strategy
+			when="#[exception.causedBy(java.lang.IllegalArgumentException)]"
+			doc:name="No destination code set">
+			<set-payload value="#[exception.message]" doc:name="Set Payload" />
+			<set-property propertyName="http.status" value="400"
+				doc:name="Property" />
+			<logger level="INFO" doc:name="Logger" />
+		</catch-exception-strategy>
+	
+		<catch-exception-strategy
 			when="#[exception.causeMatches('com.mulesoft.weave.*')]" doc:name="No flights - DW exception">
 			<set-payload value="NO FLIGHTS to #[flowVars.code + '\n' + exception]"
 				doc:name="Set Payload" />
@@ -36,7 +45,8 @@ http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/cu
 				doc:name="Property" />
 			<logger level="INFO" doc:name="Logger" />
 		</catch-exception-strategy>
-	</choice-exception-strategy>
+
+    </choice-exception-strategy>
 
 
 
