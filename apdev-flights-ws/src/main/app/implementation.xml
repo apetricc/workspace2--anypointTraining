@@ -170,15 +170,13 @@ data: {
             <dw:input-payload doc:sample="flights-example.xml" mimeType="application/xml"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
+
 ---
-flights: payload.ns0#listAllFlightsResponse.*return map {
-
+flights: payload.listAllFlightsResponse.*return map {
 		dest: $.destination,
-		price: $.price		
-
-}
-	
-]]></dw:set-payload>
+		price: $.price	
+			
+}]]></dw:set-payload>
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
     </flow>
