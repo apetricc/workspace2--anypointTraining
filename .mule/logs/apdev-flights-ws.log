@@ -22429,3 +22429,460 @@ Message properties:
     http.status=400
   SESSION scoped properties:
 }
+2018-04-06 22:05:10,516 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-flights-ws'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:05:10,638 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-06 22:05:10,749 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-06 22:05:10,852 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-06 22:05:10,852 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-06 22:05:11,087 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@758f4f03: startup date [Fri Apr 06 22:05:11 CDT 2018]; root of context hierarchy
+2018-04-06 22:05:12,476 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [flights-DEV.properties]
+2018-04-06 22:05:12,484 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [flights-DEV.properties]
+2018-04-06 22:05:12,501 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-06 22:05:13,485 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-04-06 22:05:13,849 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-tx-log/tx2.log
+2018-04-06 22:05:13,857 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-xa-tx-log/tx2.log
+2018-04-06 22:05:13,947 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-04-06 22:05:13,954 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getFlightsFlow
+2018-04-06 22:05:13,956 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6b321262
+2018-04-06 22:05:13,956 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@68b11545
+2018-04-06 22:05:13,956 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7d0100ea
+2018-04-06 22:05:13,978 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getFlightsFlow.stage1
+2018-04-06 22:05:14,009 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-04-06 22:05:14,009 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@69364b2d
+2018-04-06 22:05:14,009 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@53aa2fc9
+2018-04-06 22:05:14,010 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4792f119
+2018-04-06 22:05:14,013 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-04-06 22:05:14,021 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-04-06 22:05:14,021 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1283ca23
+2018-04-06 22:05:14,021 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@740fefc6
+2018-04-06 22:05:14,021 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@aa61e4e
+2018-04-06 22:05:14,024 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-04-06 22:05:15,521 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-04-06 22:05:15,521 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4628a02b
+2018-04-06 22:05:15,521 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2b01c689
+2018-04-06 22:05:15,521 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@51424203
+2018-04-06 22:05:15,527 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-04-06 22:05:15,530 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlightsFlow
+2018-04-06 22:05:15,530 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5a7b6b75
+2018-04-06 22:05:15,531 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3719360c
+2018-04-06 22:05:15,531 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3afca2c
+2018-04-06 22:05:15,534 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlightsFlow.stage1
+2018-04-06 22:05:15,543 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: postFlightFlow
+2018-04-06 22:05:15,543 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@19ae36f4
+2018-04-06 22:05:15,544 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6735f210
+2018-04-06 22:05:15,544 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4567fb2b
+2018-04-06 22:05:15,549 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: postFlightFlow.stage1
+2018-04-06 22:05:15,552 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: postMultipleFlightsFlow
+2018-04-06 22:05:15,552 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1b31af02
+2018-04-06 22:05:15,552 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2bb31455
+2018-04-06 22:05:15,553 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3c16528d
+2018-04-06 22:05:15,559 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: postMultipleFlightsFlow.stage1
+2018-04-06 22:05:15,560 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mua-flights-api-main
+2018-04-06 22:05:15,560 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-04-06 22:05:15,561 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-04-06 22:05:15,561 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-04-06 22:05:15,561 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-04-06 22:05:15,561 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-04-06 22:05:15,567 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mua-flights-api-main.stage1
+2018-04-06 22:05:15,570 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mua-flights-api-console
+2018-04-06 22:05:15,570 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@314b7945
+2018-04-06 22:05:15,570 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@32da97fd
+2018-04-06 22:05:15,570 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@64440065
+2018-04-06 22:05:15,576 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mua-flights-api-console.stage1
+2018-04-06 22:05:15,584 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:mua-flights-api-config
+2018-04-06 22:05:15,584 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2d4fb0d8
+2018-04-06 22:05:15,584 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@dc1fadd
+2018-04-06 22:05:15,584 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3ef3f661
+2018-04-06 22:05:15,591 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:mua-flights-api-config.stage1
+2018-04-06 22:05:16,042 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-04-06 22:05:16,264 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/global.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/implementation.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/interface.xml'}]"
+2018-04-06 22:05:16,264 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/global.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/implementation.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/interface.xml'}]"
+2018-04-06 22:05:16,268 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-04-06 22:05:16,270 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-flights-ws'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:05:16,275 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-04-06 22:05:16,275 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-04-06 22:05:16,328 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-04-06 22:05:16,333 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:05:16,335 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-04-06 22:05:16,336 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getFlightsFlow
+2018-04-06 22:05:16,337 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getFlightsFlow.stage1
+2018-04-06 22:05:16,343 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-04-06 22:05:16,343 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-04-06 22:05:16,344 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-04-06 22:05:16,345 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-04-06 22:05:16,346 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-04-06 22:05:16,346 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-04-06 22:05:16,348 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlightsFlow
+2018-04-06 22:05:16,348 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlightsFlow.stage1
+2018-04-06 22:05:16,351 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: postFlightFlow
+2018-04-06 22:05:16,351 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: postFlightFlow.stage1
+2018-04-06 22:05:16,353 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: postMultipleFlightsFlow
+2018-04-06 22:05:16,353 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: postMultipleFlightsFlow.stage1
+2018-04-06 22:05:16,355 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mua-flights-api-main
+2018-04-06 22:05:16,355 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mua-flights-api-main.stage1
+2018-04-06 22:05:16,363 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2018-04-06 22:05:16,363 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mua-flights-api-console
+2018-04-06 22:05:16,363 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mua-flights-api-console.stage1
+2018-04-06 22:05:16,365 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:mua-flights-api-config
+2018-04-06 22:05:16,365 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:mua-flights-api-config.stage1
+2018-04-06 22:05:16,583 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-04-06 22:05:16,605 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-flights-ws                                      *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-04-06 22:06:47,531 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-flights-ws'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:06:47,651 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-06 22:06:47,763 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-06 22:06:47,872 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-06 22:06:47,872 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-06 22:06:48,107 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@758f4f03: startup date [Fri Apr 06 22:06:48 CDT 2018]; root of context hierarchy
+2018-04-06 22:06:48,823 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-04-06 22:06:48,833 [main] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'expression-language'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-configuration-extension}' is expected.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:453) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3231) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1791) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:741) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[?:1.8.0_161]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[?:1.8.0_161]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.MuleDocumentLoader.loadDocument(MuleDocumentLoader.java:91) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.MuleArtifactContext.loadBeanDefinitions(MuleArtifactContext.java:192) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:541) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452) ~[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.mule.config.spring.SpringRegistry.doInitialise(SpringRegistry.java:108) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:104) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:177) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:100) ~[mule-module-spring-config-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AutoConfigurationBuilder.autoConfigure(AutoConfigurationBuilder.java:102) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AutoConfigurationBuilder.doConfigure(AutoConfigurationBuilder.java:54) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.context.DefaultMuleContextFactory$1.configure(DefaultMuleContextFactory.java:89) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:210) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:64) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:137) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:59) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:72) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployArtifact(DefaultArchiveDeployer.java:536) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployArtifact(DefaultArchiveDeployer.java:333) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:193) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:282) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:80) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:566) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.deployPackedApps(DeploymentDirectoryWatcher.java:283) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.start(DeploymentDirectoryWatcher.java:155) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.MuleDeploymentService.start(MuleDeploymentService.java:139) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at org.mule.module.launcher.MuleContainer.start(MuleContainer.java:172) ~[mule-module-launcher-3.9.0.jar:3.9.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at org.mule.tooling.server.application.ApplicationDeployer.main(ApplicationDeployer.java:33) ~[tooling-support-3.9.0.jar:?]
+2018-04-06 22:06:48,836 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - App 'apdev-flights-ws' never started, nothing to dispose of
+2018-04-06 22:07:49,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-flights-ws'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:07:49,016 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-06 22:07:49,020 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-06 22:07:49,035 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-06 22:07:49,036 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-06 22:07:49,038 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1983e1e2: startup date [Fri Apr 06 22:07:49 CDT 2018]; root of context hierarchy
+2018-04-06 22:07:49,958 [Mule.app.deployer.monitor.1.thread.1] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [flights-DEV.properties]
+2018-04-06 22:07:49,963 [Mule.app.deployer.monitor.1.thread.1] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [flights-DEV.properties]
+2018-04-06 22:07:49,981 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-06 22:07:51,138 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-04-06 22:07:51,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-tx-log/tx2.log
+2018-04-06 22:07:51,410 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-xa-tx-log/tx2.log
+2018-04-06 22:07:51,494 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-04-06 22:07:51,502 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getFlightsFlow
+2018-04-06 22:07:51,504 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6a57c2ae
+2018-04-06 22:07:51,504 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@26fa09f7
+2018-04-06 22:07:51,504 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@229e4039
+2018-04-06 22:07:51,529 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getFlightsFlow.stage1
+2018-04-06 22:07:51,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-04-06 22:07:51,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@b96b04f
+2018-04-06 22:07:51,558 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2e16ae13
+2018-04-06 22:07:51,558 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@38c2c274
+2018-04-06 22:07:51,562 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-04-06 22:07:51,574 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-04-06 22:07:51,574 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@59e33e75
+2018-04-06 22:07:51,574 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@648480f
+2018-04-06 22:07:51,575 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@25d38056
+2018-04-06 22:07:51,579 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-04-06 22:07:53,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-04-06 22:07:53,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@cc8179f
+2018-04-06 22:07:53,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@264bac18
+2018-04-06 22:07:53,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1b7e69ca
+2018-04-06 22:07:53,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-04-06 22:07:53,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlightsFlow
+2018-04-06 22:07:53,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@58f53ae0
+2018-04-06 22:07:53,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2ca40f42
+2018-04-06 22:07:53,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@59c9d4d3
+2018-04-06 22:07:53,069 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlightsFlow.stage1
+2018-04-06 22:07:53,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: postFlightFlow
+2018-04-06 22:07:53,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@30a89c0c
+2018-04-06 22:07:53,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@35ee2d60
+2018-04-06 22:07:53,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@61450f7d
+2018-04-06 22:07:53,081 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: postFlightFlow.stage1
+2018-04-06 22:07:53,084 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: postMultipleFlightsFlow
+2018-04-06 22:07:53,084 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2b99fc3b
+2018-04-06 22:07:53,084 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@238491a6
+2018-04-06 22:07:53,084 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@24b6f656
+2018-04-06 22:07:53,090 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: postMultipleFlightsFlow.stage1
+2018-04-06 22:07:53,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mua-flights-api-main
+2018-04-06 22:07:53,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-04-06 22:07:53,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-04-06 22:07:53,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-04-06 22:07:53,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-04-06 22:07:53,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-04-06 22:07:53,097 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mua-flights-api-main.stage1
+2018-04-06 22:07:53,100 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mua-flights-api-console
+2018-04-06 22:07:53,100 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@40e516e
+2018-04-06 22:07:53,100 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2d68d5ca
+2018-04-06 22:07:53,100 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@165fe9c1
+2018-04-06 22:07:53,105 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mua-flights-api-console.stage1
+2018-04-06 22:07:53,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:mua-flights-api-config
+2018-04-06 22:07:53,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6cef01a
+2018-04-06 22:07:53,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1c739e8e
+2018-04-06 22:07:53,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@ad0b5c3
+2018-04-06 22:07:53,114 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:mua-flights-api-config.stage1
+2018-04-06 22:07:53,463 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-04-06 22:07:53,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/global.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/implementation.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/interface.xml'}]"
+2018-04-06 22:07:53,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/global.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/implementation.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/interface.xml'}]"
+2018-04-06 22:07:53,694 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-04-06 22:07:53,696 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-flights-ws'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:07:53,701 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-04-06 22:07:53,701 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-04-06 22:07:53,757 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-04-06 22:07:53,763 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:07:53,764 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-04-06 22:07:53,766 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getFlightsFlow
+2018-04-06 22:07:53,766 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getFlightsFlow.stage1
+2018-04-06 22:07:53,771 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-04-06 22:07:53,771 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-04-06 22:07:53,772 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-04-06 22:07:53,772 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-04-06 22:07:53,774 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-04-06 22:07:53,774 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-04-06 22:07:53,776 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlightsFlow
+2018-04-06 22:07:53,776 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlightsFlow.stage1
+2018-04-06 22:07:53,780 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: postFlightFlow
+2018-04-06 22:07:53,780 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: postFlightFlow.stage1
+2018-04-06 22:07:53,781 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: postMultipleFlightsFlow
+2018-04-06 22:07:53,781 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: postMultipleFlightsFlow.stage1
+2018-04-06 22:07:53,783 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mua-flights-api-main
+2018-04-06 22:07:53,784 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mua-flights-api-main.stage1
+2018-04-06 22:07:53,792 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2018-04-06 22:07:53,792 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mua-flights-api-console
+2018-04-06 22:07:53,792 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mua-flights-api-console.stage1
+2018-04-06 22:07:53,796 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:mua-flights-api-config
+2018-04-06 22:07:53,797 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:mua-flights-api-config.stage1
+2018-04-06 22:07:54,048 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-04-06 22:07:54,070 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-flights-ws                                      *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-04-06 22:08:29,109 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'apdev-flights-ws'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:08:29,111 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getFlightsFlow
+2018-04-06 22:08:29,112 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getFlightsFlow.stage1
+2018-04-06 22:08:29,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getUnitedFlightsFlow
+2018-04-06 22:08:29,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getUnitedFlightsFlow.stage1
+2018-04-06 22:08:29,505 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getDeltaFlightsFlow
+2018-04-06 22:08:29,505 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getDeltaFlightsFlow.stage1
+2018-04-06 22:08:29,710 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getAmericanFlightsFlow
+2018-04-06 22:08:29,710 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getAmericanFlightsFlow.stage1
+2018-04-06 22:08:29,913 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: getAllAirlineFlightsFlow
+2018-04-06 22:08:29,913 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: getAllAirlineFlightsFlow.stage1
+2018-04-06 22:08:30,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: postFlightFlow
+2018-04-06 22:08:30,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: postFlightFlow.stage1
+2018-04-06 22:08:30,316 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: postMultipleFlightsFlow
+2018-04-06 22:08:30,316 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: postMultipleFlightsFlow.stage1
+2018-04-06 22:08:38,468 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-flights-ws'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:08:38,591 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-06 22:08:38,700 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-06 22:08:38,809 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-06 22:08:38,809 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-06 22:08:39,043 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@758f4f03: startup date [Fri Apr 06 22:08:39 CDT 2018]; root of context hierarchy
+2018-04-06 22:08:40,425 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [flights-DEV.properties]
+2018-04-06 22:08:40,432 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [flights-DEV.properties]
+2018-04-06 22:08:40,449 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-06 22:08:41,462 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-04-06 22:08:41,810 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-tx-log/tx2.log
+2018-04-06 22:08:41,816 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-flights-ws/queue-xa-tx-log/tx2.log
+2018-04-06 22:08:41,897 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-04-06 22:08:41,904 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getFlightsFlow
+2018-04-06 22:08:41,905 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@319642db
+2018-04-06 22:08:41,905 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@59498d94
+2018-04-06 22:08:41,905 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@35bfa1bb
+2018-04-06 22:08:41,929 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getFlightsFlow.stage1
+2018-04-06 22:08:41,953 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getUnitedFlightsFlow
+2018-04-06 22:08:41,953 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6f9ab79d
+2018-04-06 22:08:41,953 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@64ae105d
+2018-04-06 22:08:41,953 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@10a18e3e
+2018-04-06 22:08:41,957 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getUnitedFlightsFlow.stage1
+2018-04-06 22:08:41,964 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getDeltaFlightsFlow
+2018-04-06 22:08:41,964 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4a058df8
+2018-04-06 22:08:41,964 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4b56b031
+2018-04-06 22:08:41,964 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@2e7af36e
+2018-04-06 22:08:41,968 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getDeltaFlightsFlow.stage1
+2018-04-06 22:08:43,413 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAmericanFlightsFlow
+2018-04-06 22:08:43,414 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5f56424d
+2018-04-06 22:08:43,414 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@237b2852
+2018-04-06 22:08:43,414 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@448cdb47
+2018-04-06 22:08:43,417 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAmericanFlightsFlow.stage1
+2018-04-06 22:08:43,420 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getAllAirlineFlightsFlow
+2018-04-06 22:08:43,420 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4c04216f
+2018-04-06 22:08:43,420 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@987a0bb
+2018-04-06 22:08:43,420 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1f949ab9
+2018-04-06 22:08:43,423 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getAllAirlineFlightsFlow.stage1
+2018-04-06 22:08:43,431 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: postFlightFlow
+2018-04-06 22:08:43,431 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6fb22ae3
+2018-04-06 22:08:43,431 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6bd92538
+2018-04-06 22:08:43,431 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@69a373fd
+2018-04-06 22:08:43,436 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: postFlightFlow.stage1
+2018-04-06 22:08:43,440 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: postMultipleFlightsFlow
+2018-04-06 22:08:43,440 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@aa752bb
+2018-04-06 22:08:43,440 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@77fc19cf
+2018-04-06 22:08:43,441 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@643ecfef
+2018-04-06 22:08:43,447 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: postMultipleFlightsFlow.stage1
+2018-04-06 22:08:43,448 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mua-flights-api-main
+2018-04-06 22:08:43,448 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=404, exceptions=[org.mule.module.apikit.exception.NotFoundException]}
+2018-04-06 22:08:43,449 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=405, exceptions=[org.mule.module.apikit.exception.MethodNotAllowedException]}
+2018-04-06 22:08:43,449 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=415, exceptions=[org.mule.module.apikit.exception.UnsupportedMediaTypeException]}
+2018-04-06 22:08:43,449 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=406, exceptions=[org.mule.module.apikit.exception.NotAcceptableException]}
+2018-04-06 22:08:43,449 [main] INFO  org.mule.module.apikit.MappingExceptionListener - Initialising exception listener: MappingExceptionListener{statusCode=400, exceptions=[org.mule.module.apikit.exception.BadRequestException]}
+2018-04-06 22:08:43,455 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mua-flights-api-main.stage1
+2018-04-06 22:08:43,458 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: mua-flights-api-console
+2018-04-06 22:08:43,458 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@e01a26b
+2018-04-06 22:08:43,458 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@7604198a
+2018-04-06 22:08:43,459 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5cce40d7
+2018-04-06 22:08:43,464 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: mua-flights-api-console.stage1
+2018-04-06 22:08:43,471 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: get:/flights:mua-flights-api-config
+2018-04-06 22:08:43,471 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@4e4894d
+2018-04-06 22:08:43,471 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1de5cc88
+2018-04-06 22:08:43,471 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@23e2c1ca
+2018-04-06 22:08:43,478 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: get:/flights:mua-flights-api-config.stage1
+2018-04-06 22:08:43,949 [main] INFO  org.mule.module.apikit.Configuration - Building resource URI cache...
+2018-04-06 22:08:44,169 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/global.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/implementation.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/interface.xml'}]"
+2018-04-06 22:08:44,169 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/global.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/implementation.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-flights-ws/interface.xml'}]"
+2018-04-06 22:08:44,173 [main] WARN  org.mule.config.spring.SpringRegistry - Spring registry already contains an object named 'gateway-message-source:http://0.0.0.0:8081/flights'. The previous object will be overwritten.
+2018-04-06 22:08:44,174 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-flights-ws'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:08:44,180 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-04-06 22:08:44,180 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-04-06 22:08:44,233 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-04-06 22:08:44,239 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-06 22:08:44,240 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-04-06 22:08:44,242 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getFlightsFlow
+2018-04-06 22:08:44,242 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getFlightsFlow.stage1
+2018-04-06 22:08:44,246 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getUnitedFlightsFlow
+2018-04-06 22:08:44,246 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getUnitedFlightsFlow.stage1
+2018-04-06 22:08:44,247 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getDeltaFlightsFlow
+2018-04-06 22:08:44,248 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getDeltaFlightsFlow.stage1
+2018-04-06 22:08:44,249 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAmericanFlightsFlow
+2018-04-06 22:08:44,249 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAmericanFlightsFlow.stage1
+2018-04-06 22:08:44,251 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getAllAirlineFlightsFlow
+2018-04-06 22:08:44,252 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getAllAirlineFlightsFlow.stage1
+2018-04-06 22:08:44,256 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: postFlightFlow
+2018-04-06 22:08:44,256 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: postFlightFlow.stage1
+2018-04-06 22:08:44,258 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: postMultipleFlightsFlow
+2018-04-06 22:08:44,258 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: postMultipleFlightsFlow.stage1
+2018-04-06 22:08:44,260 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mua-flights-api-main
+2018-04-06 22:08:44,260 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mua-flights-api-main.stage1
+2018-04-06 22:08:44,269 [main] INFO  org.mule.module.apikit.Configuration - 
+********************************************************************************
+* APIKit Console URL: http://127.0.0.1:8081/console                            *
+********************************************************************************
+2018-04-06 22:08:44,269 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: mua-flights-api-console
+2018-04-06 22:08:44,269 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: mua-flights-api-console.stage1
+2018-04-06 22:08:44,271 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: get:/flights:mua-flights-api-config
+2018-04-06 22:08:44,271 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: get:/flights:mua-flights-api-config.stage1
+2018-04-06 22:08:44,492 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-04-06 22:08:44,522 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-flights-ws                                      *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************

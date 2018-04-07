@@ -170,16 +170,17 @@ data: {
             <dw:input-payload doc:sample="flights-example.xml" mimeType="application/xml"/>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
-
+%type currency = :string {format: "###.00"}
+%type flight = :object {class: "com.mulesoft.training.Flight"}
 ---
 flights: payload.listAllFlightsResponse.*return map {
-		dest: $.destination,
-		price:  $.price as :number as :string {format: "###.00"},	
-		plane: upper ($.planeType replace /(Boing)/ with "Boeing"),
-		date: $.departureDate as :date {format: "yyyy/MM/dd"} 
+		destination: $.destination,
+		price:  $.price as :number as :currency,	
+		planeType: upper ($.planeType replace /(Boing)/ with "Boeing"),
+		departureDate: $.departureDate as :date {format: "yyyy/MM/dd"} 
 		as :string {format: "MMM dd, yyyy"},	
-		seats: $.emptySeats as :number
-} orderBy $.date orderBy $.price distinctBy $ filter ($.seats != 0)
+		availableSeats: $.emptySeats as :number
+} as :flight orderBy $.departureDate orderBy $.price distinctBy $ filter ($.availableSeats != 0)
 ]]></dw:set-payload>
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
