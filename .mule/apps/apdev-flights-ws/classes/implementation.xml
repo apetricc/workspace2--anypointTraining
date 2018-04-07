@@ -169,7 +169,7 @@ data: {
         <dw:transform-message doc:name="Transform Message" metadata:id="1f965146-2ff9-4958-8667-72990b8b0ec0">
             <dw:input-payload doc:sample="flights-example.xml" mimeType="application/xml"/>
             <dw:set-payload><![CDATA[%dw 1.0
-%output application/java
+%output application/json
 %type currency = :string {format: "###.00"}
 %type flight = :object {class: "com.mulesoft.training.Flight"}
 ---
@@ -179,10 +179,17 @@ flights: payload.listAllFlightsResponse.*return map {
 		planeType: upper ($.planeType replace /(Boing)/ with "Boeing"),
 		departureDate: $.departureDate as :date {format: "yyyy/MM/dd"} 
 		as :string {format: "MMM dd, yyyy"},	
-		availableSeats: $.emptySeats as :number
-} as :flight orderBy $.departureDate orderBy $.price distinctBy $ filter ($.availableSeats != 0)
+		availableSeats: $.emptySeats as :number,
+		totalSeats: lookup("getTotalSeatsFlow", {type: $.planeType})
+		//totalSeats: getNumSeats($.planeType)
+} orderBy $.departureDate orderBy $.price distinctBy $ filter ($.availableSeats != 0)
 ]]></dw:set-payload>
         </dw:transform-message>
         <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="getTotalSeatsFlow">
+        <expression-component doc:name="Expression"><![CDATA[if(payload.type.contains('737')) {
+	    				payload = 150;
+	    			} else payload = 300;]]></expression-component>
     </flow>
 </mule>
