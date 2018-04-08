@@ -2452,3 +2452,535 @@ Message properties:
   OUTBOUND scoped properties:
   SESSION scoped properties:
 }
+2018-04-07 18:36:04,786 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 18:36:04,901 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-07 18:36:05,007 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-07 18:36:05,109 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-07 18:36:05,109 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-07 18:36:05,351 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@e3cee7b: startup date [Sat Apr 07 18:36:05 CDT 2018]; root of context hierarchy
+2018-04-07 18:36:06,698 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 18:36:06,702 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 18:36:06,722 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-07 18:36:07,743 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-04-07 18:36:08,102 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-04-07 18:36:08,114 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-04-07 18:36:08,118 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-04-07 18:36:08,145 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2018-04-07 18:36:08,241 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-04-07 18:36:08,245 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getSFDCAccountsFlow
+2018-04-07 18:36:08,245 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1b7f06c7
+2018-04-07 18:36:08,273 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getSFDCAccountsFlow.stage1
+2018-04-07 18:36:08,285 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getCSVAccountsFlow
+2018-04-07 18:36:08,285 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7f3ca64a
+2018-04-07 18:36:08,289 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getCSVAccountsFlow.stage1
+2018-04-07 18:36:08,289 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-04-07 18:36:08,290 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@733fb462
+2018-04-07 18:36:08,293 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-04-07 18:36:08,294 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-04-07 18:36:08,294 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@902fdbe
+2018-04-07 18:36:08,298 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-04-07 18:36:08,532 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 18:36:08,532 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 18:36:08,538 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 18:36:08,542 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-04-07 18:36:08,542 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-04-07 18:36:08,596 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-04-07 18:36:08,599 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5ff6dd3c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 18:36:08,599 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5ff6dd3c
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 18:36:08,600 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-04-07 18:36:08,600 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=3bfae028
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 18:36:08,600 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=3bfae028
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 18:36:08,600 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2018-04-07 18:36:08,604 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (1) used in this application                               +
++ Salesforce 8.6.0 (DevKit 3.9.4 Build UNNAMED.2810.4347dd1)+                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 18:36:08,605 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-04-07 18:36:08,606 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getSFDCAccountsFlow
+2018-04-07 18:36:08,607 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getSFDCAccountsFlow.stage1
+2018-04-07 18:36:08,609 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getCSVAccountsFlow
+2018-04-07 18:36:08,609 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getCSVAccountsFlow.stage1
+2018-04-07 18:36:08,611 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-04-07 18:36:08,611 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-04-07 18:36:08,613 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-04-07 18:36:08,613 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-04-07 18:36:08,864 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: getCSVAccountsFlow on endpointUri: file://src/main/resources/input
+2018-04-07 18:36:08,885 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-04-07 18:36:08,888 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 18:36:08,889 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-04-07 18:36:08,889 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-04-07 18:36:08,892 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: flow2 on endpointUri: vm://vmflow
+2018-04-07 18:36:08,895 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2018-04-07 18:36:08,895 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 18:36:08,895 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2018-04-07 18:36:08,895 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2018-04-07 18:36:08,901 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-04-07 18:36:08,921 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 18:36:08,921 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 18:36:08,922 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 18:36:08,922 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 18:36:08,923 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.file.mule.default"
+2018-04-07 18:36:08,924 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.VM.mule.default"
+2018-04-07 18:36:08,927 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-04-07 19:27:26,839 [[apdev-examples].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: /Users/apetricc/anypointTraining/workspace2/apdev-examples/src/main/resources/input/accounts.csv
+2018-04-07 19:27:27,952 [[apdev-examples].getCSVAccountsFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - [{Billing Street=111 Boulevard Hausmann, Billing City=Paris, Billing Country=France, Billing State=, Name=Dog Park Industries, BillingPostalCode=75008}, {Billing Street=400 South St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Iguana Park Industries, BillingPostalCode=91156}, {Billing Street=777 North St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Cat Park Industries, BillingPostalCode=91156}]
+2018-04-07 19:28:02,933 [[apdev-examples].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: /Users/apetricc/anypointTraining/workspace2/apdev-examples/src/main/resources/input/accounts.csv
+2018-04-07 19:28:02,950 [[apdev-examples].getCSVAccountsFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - [{Billing Street=111 Boulevard Hausmann, Billing City=Paris, Billing Country=France, Billing State=, Name=Dog Park Industries, BillingPostalCode=75008}, {Billing Street=400 South St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Iguana Park Industries, BillingPostalCode=91156}, {Billing Street=777 North St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Cat Park Industries, BillingPostalCode=91156}]
+2018-04-07 19:29:00,331 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:29:00,504 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-07 19:29:00,670 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-07 19:29:01,016 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-07 19:29:01,016 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-07 19:29:01,085 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@62566842: startup date [Sat Apr 07 19:29:01 CDT 2018]; root of context hierarchy
+2018-04-07 19:29:02,824 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 19:29:02,830 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 19:29:02,851 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-07 19:29:04,334 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-04-07 19:29:04,808 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-04-07 19:29:04,827 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-04-07 19:29:04,833 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-04-07 19:29:04,872 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2018-04-07 19:29:04,984 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-04-07 19:29:04,988 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getSFDCAccountsFlow
+2018-04-07 19:29:04,988 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@51f01535
+2018-04-07 19:29:05,023 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getSFDCAccountsFlow.stage1
+2018-04-07 19:29:05,040 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getCSVAccountsFlow
+2018-04-07 19:29:05,040 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@f849027
+2018-04-07 19:29:05,043 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getCSVAccountsFlow.stage1
+2018-04-07 19:29:05,043 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-04-07 19:29:05,044 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7893c715
+2018-04-07 19:29:05,048 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-04-07 19:29:05,049 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-04-07 19:29:05,049 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@316d30ad
+2018-04-07 19:29:05,052 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-04-07 19:29:05,344 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 19:29:05,344 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 19:29:05,351 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:29:05,356 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-04-07 19:29:05,356 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-04-07 19:29:05,410 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-04-07 19:29:05,413 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3ea48c37
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:05,414 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=3ea48c37
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:05,415 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-04-07 19:29:05,415 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=71dd4624
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:05,415 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=71dd4624
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:05,415 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2018-04-07 19:29:05,419 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (1) used in this application                               +
++ Salesforce 8.6.0 (DevKit 3.9.4 Build UNNAMED.2810.4347dd1)+                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:29:05,420 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-04-07 19:29:05,422 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getSFDCAccountsFlow
+2018-04-07 19:29:05,422 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getSFDCAccountsFlow.stage1
+2018-04-07 19:29:05,426 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getCSVAccountsFlow
+2018-04-07 19:29:05,426 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getCSVAccountsFlow.stage1
+2018-04-07 19:29:05,429 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-04-07 19:29:05,429 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-04-07 19:29:05,432 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-04-07 19:29:05,432 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-04-07 19:29:05,713 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: getCSVAccountsFlow on endpointUri: file://src/main/resources/input
+2018-04-07 19:29:05,739 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-04-07 19:29:05,742 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 19:29:05,743 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-04-07 19:29:05,743 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-04-07 19:29:05,748 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: flow2 on endpointUri: vm://vmflow
+2018-04-07 19:29:05,751 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2018-04-07 19:29:05,752 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 19:29:05,752 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2018-04-07 19:29:05,752 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2018-04-07 19:29:05,758 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-04-07 19:29:05,782 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 19:29:05,783 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 19:29:05,783 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 19:29:05,783 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 19:29:05,785 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.file.mule.default"
+2018-04-07 19:29:05,785 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.VM.mule.default"
+2018-04-07 19:29:05,789 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-04-07 19:29:39,535 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:29:39,694 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-07 19:29:39,855 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-07 19:29:40,182 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-07 19:29:40,182 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-07 19:29:40,254 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@34cf294c: startup date [Sat Apr 07 19:29:40 CDT 2018]; root of context hierarchy
+2018-04-07 19:29:42,084 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 19:29:42,089 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 19:29:42,113 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-07 19:29:43,528 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-04-07 19:29:44,004 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-04-07 19:29:44,020 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-04-07 19:29:44,024 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-04-07 19:29:44,061 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2018-04-07 19:29:44,184 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-04-07 19:29:44,189 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getSFDCAccountsFlow
+2018-04-07 19:29:44,190 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c25d0d1
+2018-04-07 19:29:44,225 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getSFDCAccountsFlow.stage1
+2018-04-07 19:29:44,240 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getCSVAccountsFlow
+2018-04-07 19:29:44,240 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7fd751de
+2018-04-07 19:29:44,243 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getCSVAccountsFlow.stage1
+2018-04-07 19:29:44,244 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-04-07 19:29:44,244 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4d20616a
+2018-04-07 19:29:44,249 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-04-07 19:29:44,249 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-04-07 19:29:44,249 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@9c0d0bd
+2018-04-07 19:29:44,252 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-04-07 19:29:44,535 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 19:29:44,535 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 19:29:44,542 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:29:44,546 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-04-07 19:29:44,546 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-04-07 19:29:44,598 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-04-07 19:29:44,600 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1187dc82
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:44,600 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=1187dc82
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:44,601 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-04-07 19:29:44,602 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=72b40f87
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:44,602 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=72b40f87
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:29:44,602 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2018-04-07 19:29:44,607 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (1) used in this application                               +
++ Salesforce 8.6.0 (DevKit 3.9.4 Build UNNAMED.2810.4347dd1)+                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:29:44,608 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-04-07 19:29:44,610 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getSFDCAccountsFlow
+2018-04-07 19:29:44,610 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getSFDCAccountsFlow.stage1
+2018-04-07 19:29:44,614 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getCSVAccountsFlow
+2018-04-07 19:29:44,614 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getCSVAccountsFlow.stage1
+2018-04-07 19:29:44,617 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-04-07 19:29:44,617 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-04-07 19:29:44,619 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-04-07 19:29:44,619 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-04-07 19:29:44,907 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: getCSVAccountsFlow on endpointUri: file://src/main/resources/input
+2018-04-07 19:29:44,933 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-04-07 19:29:44,936 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 19:29:44,937 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-04-07 19:29:44,937 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-04-07 19:29:44,942 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: flow2 on endpointUri: vm://vmflow
+2018-04-07 19:29:44,945 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2018-04-07 19:29:44,946 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 19:29:44,946 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2018-04-07 19:29:44,946 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2018-04-07 19:29:44,953 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-04-07 19:29:44,978 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 19:29:44,978 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 19:29:44,978 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 19:29:44,979 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 19:29:44,981 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.file.mule.default"
+2018-04-07 19:29:44,981 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.VM.mule.default"
+2018-04-07 19:29:44,986 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-04-07 19:29:55,988 [[apdev-examples].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: /Users/apetricc/anypointTraining/workspace2/apdev-examples/src/main/resources/input/accounts.csv
+2018-04-07 19:30:45,861 [[apdev-examples].getCSVAccountsFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - [{Billing Street=111 Boulevard Hausmann, Billing City=Paris, Billing Country=France, Billing State=, Name=Dog Park Industries, BillingPostalCode=75008}, {Billing Street=400 South St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Iguana Park Industries, BillingPostalCode=91156}, {Billing Street=777 North St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Cat Park Industries, BillingPostalCode=91156}]
+2018-04-07 19:33:19,509 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'apdev-examples'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:33:19,631 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-04-07 19:33:19,738 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-04-07 19:33:19,842 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-04-07 19:33:19,842 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2018-04-07 19:33:20,082 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6b9267b: startup date [Sat Apr 07 19:33:20 CDT 2018]; root of context hierarchy
+2018-04-07 19:33:21,495 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 19:33:21,500 [main] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [examples-DEV.properties]
+2018-04-07 19:33:21,516 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-07 19:33:22,559 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-04-07 19:33:22,957 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-tx-log/tx2.log
+2018-04-07 19:33:22,969 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx1.log and /Users/apetricc/anypointTraining/workspace2/.mule/./.mule/apdev-examples/queue-xa-tx-log/tx2.log
+2018-04-07 19:33:22,973 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2018-04-07 19:33:23,001 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.VM.mule.default
+2018-04-07 19:33:23,099 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-04-07 19:33:23,103 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getSFDCAccountsFlow
+2018-04-07 19:33:23,103 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@315c081
+2018-04-07 19:33:23,129 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getSFDCAccountsFlow.stage1
+2018-04-07 19:33:23,141 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: getCSVAccountsFlow
+2018-04-07 19:33:23,141 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@364fd4ae
+2018-04-07 19:33:23,144 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: getCSVAccountsFlow.stage1
+2018-04-07 19:33:23,144 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: apdev-examplesFlow
+2018-04-07 19:33:23,144 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7dee835
+2018-04-07 19:33:23,148 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: apdev-examplesFlow.stage1
+2018-04-07 19:33:23,149 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flow2
+2018-04-07 19:33:23,149 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@48268eec
+2018-04-07 19:33:23,152 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flow2.stage1
+2018-04-07 19:33:23,392 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 19:33:23,392 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/accounts.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/apdev-examples.xml'}, ConfigResource{resourceName='/Users/apetricc/anypointTraining/workspace2/.mule/apps/apdev-examples/global.xml'}]"
+2018-04-07 19:33:23,398 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'apdev-examples'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:33:23,402 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2018-04-07 19:33:23,402 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2018-04-07 19:33:23,451 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2018-04-07 19:33:23,454 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6042d663
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:33:23,454 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=6042d663
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:33:23,454 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2018-04-07 19:33:23,455 [main] INFO  org.mule.transport.vm.VMConnector - Connected: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=64aeaf29
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:33:23,455 [main] INFO  org.mule.transport.vm.VMConnector - Starting: VMConnector
+{
+  name=connector.VM.mule.default
+  lifecycle=initialise
+  this=64aeaf29
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[vm]
+  serviceOverrides=<none>
+}
+
+2018-04-07 19:33:23,455 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.VM.mule.default
+2018-04-07 19:33:23,459 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (1) used in this application                               +
++ Salesforce 8.6.0 (DevKit 3.9.4 Build UNNAMED.2810.4347dd1)+                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-04-07 19:33:23,460 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2018-04-07 19:33:23,461 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getSFDCAccountsFlow
+2018-04-07 19:33:23,462 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getSFDCAccountsFlow.stage1
+2018-04-07 19:33:23,465 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: getCSVAccountsFlow
+2018-04-07 19:33:23,465 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: getCSVAccountsFlow.stage1
+2018-04-07 19:33:23,467 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: apdev-examplesFlow
+2018-04-07 19:33:23,467 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: apdev-examplesFlow.stage1
+2018-04-07 19:33:23,469 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flow2
+2018-04-07 19:33:23,469 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flow2.stage1
+2018-04-07 19:33:23,728 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: getCSVAccountsFlow on endpointUri: file://src/main/resources/input
+2018-04-07 19:33:23,747 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2018-04-07 19:33:23,751 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 19:33:23,752 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2018-04-07 19:33:23,752 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2018-04-07 19:33:23,755 [main] INFO  org.mule.transport.vm.VMConnector - Registering listener: flow2 on endpointUri: vm://vmflow
+2018-04-07 19:33:23,758 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: VMMessageReceiver
+2018-04-07 19:33:23,758 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Connecting clusterizable message receiver
+2018-04-07 19:33:23,758 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: VMMessageReceiver
+2018-04-07 19:33:23,758 [main] INFO  org.mule.transport.vm.VMMessageReceiver - Starting clusterizable message receiver
+2018-04-07 19:33:23,764 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2018-04-07 19:33:23,784 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 19:33:23,784 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="getCSVAccountsFlow",connector=connector.file.mule.default,name="endpoint.file.src.main.resources.input"
+2018-04-07 19:33:23,784 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 19:33:23,784 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.apdev-examples:type=Endpoint,service="flow2",connector=connector.VM.mule.default,name="endpoint.vm.vmflow"
+2018-04-07 19:33:23,786 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.file.mule.default"
+2018-04-07 19:33:23,787 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.apdev-examples:type=Connector,name="connector.VM.mule.default"
+2018-04-07 19:33:23,792 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: apdev-examples                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2018-04-07 19:33:29,786 [[apdev-examples].connector.file.mule.default.receiver.01] INFO  org.mule.transport.file.FileMessageReceiver - Lock obtained on file: /Users/apetricc/anypointTraining/workspace2/apdev-examples/src/main/resources/input/accounts.csv
+2018-04-07 19:33:31,021 [[apdev-examples].getCSVAccountsFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - [{Billing Street=111 Boulevard Hausmann, Billing City=Paris, Billing Country=France, Billing State=, Name=Dog Park Industries, BillingPostalCode=75008}, {Billing Street=400 South St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Iguana Park Industries, BillingPostalCode=91156}, {Billing Street=777 North St, Billing City=San Francisco, Billing Country=USA, Billing State=CA, Name=Cat Park Industries, BillingPostalCode=91156}]
