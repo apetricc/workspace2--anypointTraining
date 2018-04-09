@@ -12,6 +12,30 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
 http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd">
+    <batch:job name="pollDatabaseBatch">
+        <batch:input>
+            <poll doc:name="Copy_of_Poll">
+                <fixed-frequency-scheduler frequency="5" timeUnit="SECONDS"/>
+                <watermark variable="lastAccountID" default-expression="0" selector="MAX" selector-expression="#[payload.accountID]" object-store-ref=" "/>
+                <db:select config-ref="MySQL_Configuration" doc:name="Copy_of_Database">
+                    <db:parameterized-query><![CDATA[select *
+from accounts
+where postal = '94108' and accountID > #[flowVars.lastAccountID]]]></db:parameterized-query>
+                </db:select>
+            </poll>
+        </batch:input>
+        <batch:process-records>
+            <batch:step name="Batch_Step3">
+                <enricher source="#[payload.size() &gt; 0]" target="#[recordVars.exists]" doc:name="Check if record exists">
+                    <sfdc:query config-ref="Salesforce__Basic_Authentication" query="dsql:SELECT Name FROM Account WHERE Name = '#[payload.Name]'" doc:name="Salesforce"/>
+                </enricher>
+                <logger level="INFO" doc:name="Logger"/>
+            </batch:step>
+            <batch:step name="Batch_Step2" accept-expression="#[!recordVars.exists]">
+                <logger message="#['\n\nRECORD: ' + payload]" level="INFO" doc:name="Logger"/>
+            </batch:step>
+        </batch:process-records>
+    </batch:job>
     <flow name="pollDatabaseFlow" initialState="stopped" processingStrategy="synchronous">
         <poll doc:name="Poll">
             <fixed-frequency-scheduler frequency="5" timeUnit="SECONDS"/>
