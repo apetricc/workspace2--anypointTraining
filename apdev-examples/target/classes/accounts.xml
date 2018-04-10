@@ -45,10 +45,12 @@ payload map ((payload01 , indexOfPayload01) -> {
                 <logger level="INFO" doc:name="Logger"/>
             </batch:step>
             <batch:step name="Batch_Step2" accept-expression="#[!recordVars.exists]">
-                <sfdc:create config-ref="Salesforce__Basic_Authentication" type="Account" doc:name="Salesforce">
-                    <sfdc:objects ref="#[payload]"/>
-                </sfdc:create>
-                <logger message="#['\n\nRECORD: ' + payload]" level="INFO" doc:name="Logger"/>
+                <batch:commit size="10" doc:name="Batch Commit">
+                    <sfdc:create config-ref="Salesforce__Basic_Authentication" type="Account" doc:name="Insert new records into SFDC">
+                        <sfdc:objects ref="#[payload]"/>
+                    </sfdc:create>
+                </batch:commit>
+                <logger message="#['\n\nRECORD WAS INSERTED: ' + payload + '\n\n\n\n']" level="INFO" doc:name="Logger"/>
             </batch:step>
         </batch:process-records>
     </batch:job>

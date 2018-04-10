@@ -23,6 +23,19 @@ from accounts
 where postal = '94108' and accountID > #[flowVars.lastAccountID]]]></db:parameterized-query>
                 </db:select>
             </poll>
+            <dw:transform-message doc:name="Transform Message">
+                <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload map ((payload01 , indexOfPayload01) -> {
+	Name: payload01.name,
+	BillingStreet: payload01.street,
+	BillingCity: payload01.city,
+	BillingState: payload01.state,
+	BillingPostalCode: payload01.postal,
+	BillingCountry: payload01.country
+})]]></dw:set-payload>
+            </dw:transform-message>
         </batch:input>
         <batch:process-records>
             <batch:step name="Batch_Step3">
@@ -32,7 +45,12 @@ where postal = '94108' and accountID > #[flowVars.lastAccountID]]]></db:paramete
                 <logger level="INFO" doc:name="Logger"/>
             </batch:step>
             <batch:step name="Batch_Step2" accept-expression="#[!recordVars.exists]">
-                <logger message="#['\n\nRECORD: ' + payload]" level="INFO" doc:name="Logger"/>
+                <batch:commit size="10" doc:name="Batch Commit">
+                    <sfdc:create config-ref="Salesforce__Basic_Authentication" type="Account" doc:name="Insert new records into SFDC">
+                        <sfdc:objects ref="#[payload]"/>
+                    </sfdc:create>
+                </batch:commit>
+                <logger message="#['\n\nRECORD WAS INSERTED: ' + payload + '\n\n\n\n']" level="INFO" doc:name="Logger"/>
             </batch:step>
         </batch:process-records>
     </batch:job>
