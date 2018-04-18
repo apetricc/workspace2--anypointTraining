@@ -9,9 +9,11 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
     <flow name="rerun-cramFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" doc:name="HTTP"/>
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" allowedMethods="GET" doc:name="HTTP"/>
         <set-payload value="#['hello world'.toUpperCase()]" doc:name="Set Payload"/>
-        <set-property propertyName="qpname" value="drew" doc:name="Property"/>
-        <logger message="#[message.inboundProperties.'http.query.params'.name]" level="INFO" doc:name="Logger"/>
+        <set-property propertyName="qpname" value="max" doc:name="Property"/>
+        <set-variable variableName="qpname" value="#[message.inboundProperties.'http.query.params'.type]" doc:name="Variable"/>
+        <set-session-variable variableName="color" value="orange" doc:name="setColor_sessionVar"/>
+        <logger level="INFO" doc:name="Logger" message=" #[&quot;The incoming query param \&quot;name\&quot; is: &quot; +message.inboundProperties.'http.query.params'.name \n\n] #[&quot;Outbound property qpname: &quot; + message.outboundProperties.qpname +&quot; and type: &quot; + flowVars.qpname]     Color: #[sessionVars.color] "/>
     </flow>
 </mule>
