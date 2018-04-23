@@ -1,0 +1,67 @@
+#%RAML 1.0
+version: v1
+baseUri: https://mocksvc.mulesoft.com/mocks/36ffd153-deb4-4093-951c-6bdd8b680469 # 
+title: Accounts API
+
+types: 
+  Account: !include datatypes/account.raml
+  AccountNoID: !include datatypes/accountNoID.raml
+
+/accounts: 
+  get: 
+    description: Get an account based on query params
+    headers: 
+      Requester-ID:
+        required: true
+    queryParameters: 
+      country: 
+        required: false
+        type: string  
+      name:
+        required: false
+        type: string
+      type: 
+        required: true
+        type: string
+        enum: ["personal", "business"]
+    
+    responses:
+        400:
+          body: 
+            application/json: 
+              example: {
+                "message": "error retrieving data from acct DB"
+              }
+        200: 
+          description: Returns an array of Account objects in JSON
+          body: 
+            application/json:
+              type: Account[]
+              example:  !include examples/accountsExample.raml
+        
+
+  post: 
+    description: Create new acct based on given array of Account objects
+    headers: 
+      Requester-ID: 
+        description: the ID of the requester of the account info
+        required: true
+    body: 
+      application/json:
+        description: payload needs to be an array of Account objects in JSON format
+        type: AccountNoID[]  
+        example: !include examples/accountsExampleNoID.raml
+    responses: 
+      400: 
+        body: 
+          application/json:
+            example: {
+              "message": "error creating accounts. Check JSON object & make sure it's valid."
+            }
+      200: 
+        body: 
+          application/json:
+            example: {
+              "message": "Account created (but not really)"
+            }
+        
